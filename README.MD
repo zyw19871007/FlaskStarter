@@ -1,5 +1,18 @@
 #flask测试框架-算法服务
 
+
+#####python镜像源 pip和 buildout
+1. `pip config set global.index-url http://mirrors.aliyun.com/pypi/simple`
+
+1. `~/.pip/pip.con` or `C:\Users\xx\pip\pip.ini`
+
+    ```
+   [global]
+    index-url = http://mirrors.aliyun.com/pypi/simple
+   ```
+
+1. `easy_install.py:default_index_url = 'http://mirrors.aliyun.com/pypi/simple'`
+
 #####安装
 1. python3.7+
 1. pip install zc.buildout
