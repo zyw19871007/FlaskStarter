@@ -13,7 +13,7 @@ mnist = input_data.read_data_sets("/tmp/data/", one_hot=True)
 
 # In this example, we limit mnist data
 Xtr, Ytr = mnist.train.next_batch(55000)  # whole training set
-Xte, Yte = mnist.test.next_batch(10000)  # whole test set
+Xte, Yte = mnist.test.next_batch(100)  # whole test set
 
 # tf Graph Input
 xtr = tf.placeholder("float", [None, 784])
