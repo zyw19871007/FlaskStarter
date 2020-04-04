@@ -5,6 +5,9 @@
 1. pip install zc.buildout
 1. buildout
 
+#####structure
+1. algo/app.py web程序入口
+
 
 #####Todo
 1. 引入tensorflow框架替换自带算法库
