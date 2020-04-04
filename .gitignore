@@ -1,0 +1,7 @@
+/.installed.cfg
+/parts/
+/eggs/
+/develop-eggs/
+/bin/
+/algo.egg-info/
+.idea
