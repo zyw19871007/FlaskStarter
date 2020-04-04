@@ -11,7 +11,8 @@ setup(
     description="algo.",
     packages=["algo"],
     install_requires=[
-        "flask",
+        "flask==1.1.2",
+        "tensorflow==2.1.0",
     ],
     entry_points={
         "console_scripts": [
