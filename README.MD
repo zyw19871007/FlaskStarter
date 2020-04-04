@@ -1,5 +1,10 @@
 #flask测试框架-算法服务
 
+#####安装
+1. python3.7+
+1. pip install zc.buildout
+1. buildout
+
 
 #####Todo
 1. 引入tensorflow框架替换自带算法库
