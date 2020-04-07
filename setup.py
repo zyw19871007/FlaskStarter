@@ -8,7 +8,7 @@ setup(
     name="algo",
     version=__version__,
     author="algo@gmail.com",
-    description="algo.",
+    description="algo.python.tensorflow",
     packages=["algo"],
     install_requires=[
         "flask==1.1.2",
