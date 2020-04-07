@@ -4,7 +4,7 @@
 ##### python镜像源 pip和 buildout
 1. `pip config set global.index-url http://mirrors.aliyun.com/pypi/simple`
 
- `pip config set install.trusted-host mirrors.aliyun.com`
+   `pip config set install.trusted-host mirrors.aliyun.com`
 
 1. or `~/.pip/pip.con` or `C:\Users\xx\pip\pip.ini`
 
