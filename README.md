@@ -1,7 +1,7 @@
 # flask测试框架-算法服务
 
 
-#####python镜像源 pip和 buildout
+##### python镜像源 pip和 buildout
 1. `pip config set global.index-url http://mirrors.aliyun.com/pypi/simple`
 
  `pip config set install.trusted-host mirrors.aliyun.com`
@@ -15,17 +15,17 @@
 
 1. buildout:easy_install.py:`default_index_url = 'http://mirrors.aliyun.com/pypi/simple'`
 
-#####安装
+##### 安装
 1. python3.7+
 1. pip install zc.buildout==2.13.3
 1. pip install .
 1. buildout
 
-#####structure
+##### structure
 1. algo/app.py web程序入口
 
 
-#####Todo
+##### Todo
 1. 引入tensorflow框架替换自带算法库
 1. flask实现，提供web-api接口
    1. 接口名：getQCQty
