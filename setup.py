@@ -14,6 +14,7 @@ setup(
         "flask==1.1.2",
         "tensorflow==2.1.0",
         "numpy==1.18.2",
+        "zc.recipe.egg==2.0.7"
     ],
     entry_points={
         "console_scripts": [
