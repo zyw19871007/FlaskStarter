@@ -13,6 +13,7 @@ setup(
     install_requires=[
         "flask==1.1.2",
         "tensorflow==2.1.0",
+        "numpy==1.18.2",
     ],
     entry_points={
         "console_scripts": [
