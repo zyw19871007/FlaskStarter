@@ -1,4 +1,4 @@
-# flask-starter框架
+# flask-starter-framework
 
 |Based on this project quickly build flask project
 
