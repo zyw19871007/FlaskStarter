@@ -25,7 +25,7 @@
 1. buildout
 
 ##### structure
-1. algo/app.py web ---main 
+1. algo/app.py web ---main entrance
 
 
 ##### Todo
