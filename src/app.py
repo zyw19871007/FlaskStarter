@@ -40,14 +40,14 @@ def run():
     length = len(sys.argv)
     app.run(
         host=args.bind,
-        port=args.ip,
+        port=args.port,
         debug=args.debug
     )
 
 
 if __name__ == '__main__':
     app.run(
-        host=your_rest_server_ip,
-        port="12322",
-        debug=True
+        host=args.bind,
+        port=args.port,
+        debug=args.debug
     )
