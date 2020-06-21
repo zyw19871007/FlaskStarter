@@ -5,10 +5,10 @@ from setuptools import setup, find_packages
 from src import __version__
 
 setup(
-    name="algo",
+    name="src",
     version=__version__,
-    author="algo@gmail.com",
-    description="algo.python.hd_tensorflow",
+    author="src@gmail.com",
+    description="src.python.hd_tensorflow",
     packages=find_packages(),
     package_data={
         # If any package contains *.txt or *.rst files, include them:

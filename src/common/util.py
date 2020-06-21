@@ -2,8 +2,9 @@
 import os
 import random
 from configparser import ConfigParser
-
+import argparse
 import py_eureka_client.eureka_client as eureka_client
+from src import __version__
 
 abspath = os.path.dirname(__file__)
 
@@ -53,5 +54,22 @@ def get_ignite_ip_port():
     return result
 
 
+def arg_conf():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--version', '-v', action='version',
+                        version='%(prog)s version : ' + __version__, help='show the version')
+
+    parser.add_argument('--debug', '-d', action='store_true',
+                        help='show the version',
+                        default=False)
+    parser.add_argument('--port', '-p', help='set server port', default=5000, type=int)
+    parser.add_argument('--bind', '-b', help='set server port', default='0.0.0.0', type=str)
+    args = parser.parse_args()
+    return args
+
+
 if __name__ == '__main__':
-    get_ignite_ip_port()
+    conf = arg_conf()
+    print(conf)
+    # print(conf.version)
+    print(conf.port)
