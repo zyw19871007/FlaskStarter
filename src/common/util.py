@@ -1,9 +1,11 @@
 # -*- coding: utf8 -*-
+import argparse
 import os
 import random
 from configparser import ConfigParser
-import argparse
+
 import py_eureka_client.eureka_client as eureka_client
+
 from src import __version__
 
 abspath = os.path.dirname(__file__)
@@ -63,7 +65,7 @@ def arg_conf():
                         help='show the version',
                         default=False)
     parser.add_argument('--port', '-p', help='set server port', default=5000, type=int)
-    parser.add_argument('--bind', '-b', help='set server port', default='0.0.0.0', type=str)
+    parser.add_argument('--bind', '-b', help='set server bind ip', default='0.0.0.0', type=str)
     args = parser.parse_args()
     return args
 
