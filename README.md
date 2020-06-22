@@ -26,7 +26,7 @@
 
 ##### structure
 1. algo/app.py web ---main entrance
-2. 命令行运行：python -m src.app
+2. 命令行运行：python -m src.app -p 5000
 
 
 ##### Todo
