@@ -26,7 +26,9 @@ setup(
         "zc.zdaemonrecipe==1.0.0",
         "pyignite==0.3.4",
         "ortools == 7.6.7691",
-        'py_eureka_client==0.7.4'
+        'py_eureka_client==0.7.4',
+        'python-logstash-async==1.6.6',
+        'loguru==0.5.1',
 
     ],
     entry_points={
