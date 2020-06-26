@@ -1,4 +1,5 @@
 # -*- coding: utf8 -*-
+import os
 import sys
 import traceback
 
@@ -10,6 +11,7 @@ from flask_sqlalchemy import SQLAlchemy
 import src.common.util as util
 from src import __version__
 
+basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
 
 # set optional bootswatch theme
@@ -23,7 +25,7 @@ admin = Admin(app, name='zyw-shadow', template_mode='bootstrap3')
 class Config(object):
     """配置参数"""
     # sqlalchemy的配置参数
-    SQLALCHEMY_DATABASE_URI = "sqlite:////test.db"
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
 
     # 设置sqlalchemy自动更跟踪数据库（数据库表手动更新是同步跟新到对象）
     SQLALCHEMY_TRACK_MODIFICATIONS = True
