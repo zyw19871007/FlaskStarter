@@ -12,7 +12,7 @@ setup(
     packages=find_packages(),
     package_data={
         # If any package contains *.txt or *.rst files, include them:
-        '': ['*.json', '*.xml'],
+        '': ['*.json', '*.xml', '*.ini'],
     },
     # include_package_data=True,
     install_requires=[
