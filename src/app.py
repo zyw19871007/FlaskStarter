@@ -44,7 +44,7 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
-    extend_one = db.Column(db.String(80), unique=False)
+    extend_one = db.Column(db.String(81), unique=False)
     extend_two = db.Column(db.String(80), unique=False)
     note = db.Column(db.String(255), unique=False)
 
