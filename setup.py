@@ -29,6 +29,10 @@ setup(
         'py_eureka_client==0.7.4',
         'python-logstash-async==1.6.6',
         'loguru==0.5.1',
+        'flask-admin==1.5.6',
+        'flask-SQLAlchemy==2.4.3',
+        'Flask-Migrate==2.5.3',
+        'Flask-script==2.0.6',
 
     ],
     entry_points={
