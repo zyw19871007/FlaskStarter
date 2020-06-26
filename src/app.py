@@ -111,7 +111,7 @@ def hello():
 
 @app.errorhandler(Exception)
 def handle_error(error):
-    print(error, 'error')
+    print('error', error)
     trace = traceback.format_exc()
     print(trace)
     msg = ('%s' % error)
