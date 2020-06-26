@@ -97,9 +97,6 @@ class MyView(BaseView):
 
 admin.add_view(MyView(name='Hello'))
 
-your_rest_server_ip = "0.0.0.0"
-your_rest_server_port = "5000"
-
 
 @app.route('/')
 def index():
