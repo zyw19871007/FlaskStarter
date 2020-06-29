@@ -33,6 +33,7 @@ setup(
         'flask-SQLAlchemy==2.4.3',
         'Flask-Migrate==2.5.3',
         'Flask-script==2.0.6',
+        'flask-babelex==0.9.4',
 
     ],
     entry_points={

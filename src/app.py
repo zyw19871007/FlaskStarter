@@ -1,11 +1,11 @@
 # -*- coding: utf8 -*-
 import os
 import sys
-import traceback
 
-from flask import Flask, escape, request, jsonify
+from flask import Flask, session
 from flask_admin import Admin, BaseView, expose
 from flask_admin.contrib.sqla import ModelView
+from flask_babelex import Babel
 from flask_sqlalchemy import SQLAlchemy
 
 import src.common.util as util
@@ -13,6 +13,17 @@ from src import __version__
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
+babel = Babel(app)
+app.config['BABEL_DEFAULT_LOCALE'] = 'zh_CN'
+
+
+@babel.localeselector
+def get_locale():
+    override = 'zh_CN'
+    if override:
+        session['lang'] = override
+    return session.get('lang', 'en')
+
 
 # set optional bootswatch theme
 app.config['FLASK_ADMIN_SWATCH'] = 'cerulean'
@@ -101,21 +112,6 @@ admin.add_view(MyView(name='Hello'))
 @app.route('/')
 def index():
     return 'hello'
-
-
-@app.route('/hello', methods=['GET', 'POST'])
-def hello():
-    name = request.args.get("name", "World")
-    return f'Hello-1, {escape(name)}!'
-
-
-@app.errorhandler(Exception)
-def handle_error(error):
-    print('error', error)
-    trace = traceback.format_exc()
-    print(trace)
-    msg = ('%s' % error)
-    return jsonify(code=-1, message='error', data=msg, trace=trace)
 
 
 def run():
