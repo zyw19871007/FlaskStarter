@@ -34,6 +34,7 @@ setup(
         'Flask-Migrate==2.5.3',
         'Flask-script==2.0.6',
         'flask-babelex==0.9.4',
+        'pylint==2.5.3',
 
     ],
     entry_points={
