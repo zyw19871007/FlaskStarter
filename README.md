@@ -24,6 +24,11 @@
 1. pip install .
 1. buildout
 
+##### feature(see src/config.ini)
+1. eureka config
+1. ignite config
+1. logstash config
+
 ##### structure
 1. algo/app.py web ---main entrance
 2. 命令行运行：python -m src.app -p 5000
