@@ -17,7 +17,7 @@ setup(
     # include_package_data=True,
     install_requires=[
         "flask==1.1.2",
-        "tensorflow==2.1.0",
+        "tensorflow==2.1.2",
         "numpy==1.18.2",
         "pandas==1.0.3",
         "scikit-learn==0.22.2",
