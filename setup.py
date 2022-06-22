@@ -18,7 +18,7 @@ setup(
     install_requires=[
         "flask==1.1.2",
         "tensorflow==2.5.0",
-        "numpy==1.18.2",
+        "numpy==1.22.0",
         "pandas==1.0.3",
         "scikit-learn==0.22.2",
         "joblib==0.14.1",
