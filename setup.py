@@ -21,7 +21,7 @@ setup(
         "numpy==1.18.2",
         "pandas==1.0.3",
         "scikit-learn==0.22.2",
-        "joblib==0.14.1",
+        "joblib==1.2.0",
         "zc.recipe.egg==2.0.7",
         "zc.zdaemonrecipe==1.0.0",
         "pyignite==0.3.4",
