@@ -16,7 +16,7 @@ setup(
     },
     # include_package_data=True,
     install_requires=[
-        "flask==1.1.2",
+        "flask==2.3.2",
         "tensorflow==2.5.0",
         "numpy==1.18.2",
         "pandas==1.0.3",
